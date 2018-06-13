@@ -1,0 +1,78 @@
+
+
+.App-logo {
+  height: 40px;
+  float: right;
+}
+
+.App-logo2 {
+  height: 50px;
+  float: left;;
+}
+
+.gray{
+height: 50px;
+background-color: #f1f1f1;
+}
+
+.App-header {
+  background-color: #222;
+  height: 50px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+  float: left;
+}
+
+.App-intro {
+  font-size: large;
+  padding-left: 70px;
+}
+
+.image{
+  height: 220px;
+  width:  300px;
+}
+
+.card{
+  background-color: #f1f1f1;
+  height: 320px;
+  width:  300px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* display:inline-block; */
+  float: left;
+
+}
+
+.card-header{
+  height: 40px;
+  width:  300px;
+}
+
+.image img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.card-header text {
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
+
+}
+
+.Intro-title{
+  font-size: 50px;
+  font-family: 'Joti One', cursive;;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
