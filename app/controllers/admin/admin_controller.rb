@@ -3,7 +3,7 @@ class Admin::AdminController < ApplicationController
 
   def require_admin
     unless current_user.admin?
-      render json: { error: 'Not Authenticated' }, status: 401
+      render json: { error: 'Not Authorized' }, status: 401
     end
   end
 end
