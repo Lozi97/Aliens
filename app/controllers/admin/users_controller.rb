@@ -1,6 +1,8 @@
-class UsersController < ApplicationController
-  before_action :set_user, only: [:show, :update, :destroy]
-  skip_before_action :authenticate_request
+class Admin::UsersController < Admin::AdminController
+
+    before_action :set_user, only: [:show, :update, :destroy]
+    skip_before_action :authenticate_request, only: [:create]
+
   def index
     @users = User.all
     json_response(@users)
@@ -33,4 +35,4 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
   end
 
-  end
+end

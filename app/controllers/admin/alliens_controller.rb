@@ -1,4 +1,4 @@
-class AlliensController < ApplicationController
+class Admin::AlliensController < Admin::AdminController
 
     before_action :set_allien, only: [:show, :update, :destroy]
 
