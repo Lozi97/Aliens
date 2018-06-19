@@ -8,7 +8,7 @@ class AlliensController < ApplicationController
   end
 
   def create
-    @allien = Allien.create!(allien_params)
+    @allien = Allien.create(allien_params)
     json_response(@alliens, :created)
   end
 
