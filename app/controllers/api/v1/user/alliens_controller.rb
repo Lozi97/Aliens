@@ -1,4 +1,4 @@
-class User::AlliensController < ApplicationController
+class Api::V1::User::AlliensController < ApplicationController
 
     before_action :set_allien, only: [:show]
 

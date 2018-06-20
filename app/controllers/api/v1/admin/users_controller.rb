@@ -1,4 +1,4 @@
-class Admin::UsersController < Admin::AdminController
+class Api::V1::Admin::UsersController < Api::V1::Admin::AdminController
 
     before_action :set_user, only: [:show, :update, :destroy]
     skip_before_action :authenticate_request, only: [:create]

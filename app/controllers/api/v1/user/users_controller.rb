@@ -1,4 +1,4 @@
-class User::UsersController < ApplicationController
+class Api::V1::User::UsersController < ApplicationController
 
     before_action :set_user, only: [:show]
     skip_before_action :authenticate_request, only: [:create]
@@ -15,7 +15,7 @@ class User::UsersController < ApplicationController
   private
 
   def user_params
-    params.require(:user).permit(:email, :password, :name, :admin)
+    params.require(:user).permit(:email, :password, :name)
   end
 
   def set_user
