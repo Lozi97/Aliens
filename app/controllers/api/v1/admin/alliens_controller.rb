@@ -18,12 +18,12 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
 
   def update
     @allien.update(allien_params)
-    head :no_content
+    json_response(Allien.all)
   end
 
   def destroy
     @allien.destroy
-    head :no_content
+    json_response(Allien.all)
   end
 
   private
