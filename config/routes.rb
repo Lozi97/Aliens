@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/login', to: 'authentication#authenticate'
       namespace :user do
-        post '/signup', to: 'users#create'
+        # post '/signup', to: 'users#create'
+        resources :user, only: [:create]
         resources :alliens, only: [:index, :show]
       end
       namespace :admin do
@@ -13,5 +14,5 @@ Rails.application.routes.draw do
       end
     end
   end
-  
+
 end
