@@ -29,7 +29,7 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
   private
 
   def allien_params
-    params.permit(:name, :image, :desc, :image_data)
+    params.permit(:name, :image, :desc)
   end
 
   def set_allien
