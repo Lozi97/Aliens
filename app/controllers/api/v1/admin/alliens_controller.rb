@@ -9,7 +9,7 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
 
   def create
     @allien = Allien.create(allien_params)
-    json_response(@alliens, :created)
+    json_response(@allien, :created)
   end
 
   def show
@@ -29,7 +29,7 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
   private
 
   def allien_params
-    params.permit(:name, :image, :desc)
+    params.permit(:name, :image, :desc, :image_data)
   end
 
   def set_allien

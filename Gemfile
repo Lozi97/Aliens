@@ -19,6 +19,8 @@ end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 
+gem "shrine", "~> 2.0"
+
 gem 'rack-cors', :require => 'rack/cors'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
