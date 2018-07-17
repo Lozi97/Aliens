@@ -23,6 +23,8 @@ gem "shrine", "~> 2.0"
 
 gem 'will_paginate', '~> 3.1.0'
 
+gem 'api-pagination'
+
 gem 'rack-cors', :require => 'rack/cors'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
