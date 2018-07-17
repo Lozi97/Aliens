@@ -3,7 +3,7 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
     before_action :set_allien, only: [:show, :update, :destroy]
 
   def index
-    @alliens = Allien.all
+    @alliens = Allien.paginate(:page => params[:page])
     json_response(@alliens)
   end
 
@@ -29,7 +29,7 @@ class Api::V1::Admin::AlliensController < Api::V1::Admin::AdminController
   private
 
   def allien_params
-    params.permit(:name, :image, :desc)
+    params.permit(:name, :image, :desc, :per_page)
   end
 
   def set_allien
